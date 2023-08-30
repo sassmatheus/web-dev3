@@ -1,7 +1,7 @@
 ### teste de buscar aluno por ID
 POST http://localhost:40000/Login HTTP/1.1
 content-type: application/json
-//Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE2NzQ3ODI5NzksInVzZXJuYW1lIjoicXdlIn0.SlYYCm8J6wlpb3i1jJcSvhSz6VjwKvzPOxza8P6-hzo
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InF3ZSIsImlhdCI6MTY5MzM5NTk2NSwiZXhwIjoxNjkzMzk2NTY1fQ.LyMUM9sPVB-3nbptws4vCh6-OqYqi1ke2ek9UVwNrOU
 
 {    
     "username": "qwe",
@@ -12,7 +12,7 @@ content-type: application/json
 ### teste de buscar todos os alunos
 GET http://localhost:40000/getAllAlunos HTTP/1.1
 content-type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InF3ZSIsImlhdCI6MTY5Mjc5ODkzNCwiZXhwIjoxNjkyNzk5NTM0fQ.9lcVW9mUdXBRMM5_6P0ftDqVDM8RvdqGClIKQ-FQmPQ
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InF3ZSIsImlhdCI6MTY5MzM5NjA1MSwiZXhwIjoxNjkzMzk2NjUxfQ.t3bUXB43XIR65Q6uj8omXrqSPRlaPU8MXL4ZEX1Tno8
 
 {    
     
@@ -21,35 +21,35 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InF3Z
 ### teste de buscar aluno por ID
 POST http://localhost:40000/getAlunoByID HTTP/1.1
 content-type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InF3ZSIsImlhdCI6MTY5MTQxMTU5NCwiZXhwIjoxNjkxNDExODk0fQ.1Ig9H4D6QMW0TSkwJIyv7YZjBO35u5WkOpqhoSBRA1U
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InF3ZSIsImlhdCI6MTY5MzM5NjA1MSwiZXhwIjoxNjkzMzk2NjUxfQ.t3bUXB43XIR65Q6uj8omXrqSPRlaPU8MXL4ZEX1Tno8
 
 {    
-    "alunoid": 1
+    "alunoid": 3
 }
 
-### teste de inserção de aluno
+### inserção de aluno
 POST http://localhost:40000/insertAlunos HTTP/1.1
 content-type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InF3ZSIsImlhdCI6MTY5MTQzNTg3MSwiZXhwIjoxNjkxNDM2NDcxfQ.hAh0VyRfEXvYmhunlJALD-qda8pYr2zzAHobn1yua20
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InF3ZSIsImlhdCI6MTY5MzM5NjA1MSwiZXhwIjoxNjkzMzk2NjUxfQ.t3bUXB43XIR65Q6uj8omXrqSPRlaPU8MXL4ZEX1Tno8
 
 {    
     "alunoid": 0,
-    "prontuario": "pront5",
+    "prontuario": "pront52",
     "nome": "Carlos das Matias",
-    "endereco": " Rua das couves",
+    "endereco": " Rua das couves2",
     "rendafamiliar": 10000,
     "datanascimento": "1999-12-12",
     "cursoid": 2,
     "deleted": false
 }
 
-### teste de atualização de aluno
+### atualização de aluno
 POST http://localhost:40000/updateAlunos HTTP/1.1
 content-type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InF3ZSIsImlhdCI6MTY5MTQzNTg3MSwiZXhwIjoxNjkxNDM2NDcxfQ.hAh0VyRfEXvYmhunlJALD-qda8pYr2zzAHobn1yua20
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InF3ZSIsImlhdCI6MTY5MzM5NjA1MSwiZXhwIjoxNjkzMzk2NjUxfQ.t3bUXB43XIR65Q6uj8omXrqSPRlaPU8MXL4ZEX1Tno8
 
 {    
-    "alunoid": 52,
+    "alunoid": 11,
     "prontuario": "pront109",
     "nome": "xJosé das Neves",
     "endereco": "x Rua das couves",
@@ -62,8 +62,8 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InF3Z
 ### teste de atualização de aluno
 POST http://localhost:40000/DeleteAlunos HTTP/1.1
 content-type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InF3ZSIsImlhdCI6MTY5MTQ5MDg3NCwiZXhwIjoxNjkxNDkxNDc0fQ.1ABhMgWYm8gGKy7q90GOPQpNoY5M1LLzpCltKxFjcEo
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InF3ZSIsImlhdCI6MTY5MzM5NjA1MSwiZXhwIjoxNjkzMzk2NjUxfQ.t3bUXB43XIR65Q6uj8omXrqSPRlaPU8MXL4ZEX1Tno8
 
 {    
-    "alunoid": 55  
+    "alunoid": 3
 }
